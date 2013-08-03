@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D50C56FD1080E8D600FC57D9 /* AppPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = D50C56F61080E8D600FC57D9 /* AppPreferences.m */; };
+		D50C56FF1080E8D600FC57D9 /* UpdatesPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = D50C56FC1080E8D600FC57D9 /* UpdatesPreferences.m */; };
+		D51AEC92108827D000556E96 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97324FDCFA39411CA2CEA /* AppKit.framework */; };
+		D51AEC95108827D600556E96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		D51AED9510882A2300556E96 /* UncrushPvr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51AED8D10882A2300556E96 /* UncrushPvr.cpp */; };
+		D51AEDB210882C0900556E96 /* libPVRTexLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D51AEDAC10882C0900556E96 /* libPVRTexLib.a */; };
+		D51AEE46108836A400556E96 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51AEE45108836A400556E96 /* QuickTime.framework */; };
+		D55E9B131085877600BB1C8C /* UncrushPng.c in Sources */ = {isa = PBXBuildFile; fileRef = D55E9B01108586BC00BB1C8C /* UncrushPng.c */; };
+		D561AECE107F1B55003C650E /* PngUncrush.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = D561AECD107F1B43003C650E /* PngUncrush.qlgenerator */; };
+		D57833FE107F069C00F8CE7E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D57833FD107F069C00F8CE7E /* libz.dylib */; };
+		D57CF99F107562DF00D27239 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57CF99E107562DF00D27239 /* QuickLook.framework */; };
+		D57CF9A51075632D00D27239 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57CF9A41075632D00D27239 /* Quartz.framework */; };
+		D591241B10802BB40055D774 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D591241A10802BB40055D774 /* Sparkle.framework */; };
+		D5B253B51080DFAD00323A63 /* AppsCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B253A71080DFAD00323A63 /* AppsCollection.xib */; };
+		D5B253B61080DFAD00323A63 /* AppViewPrototype.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B253A91080DFAD00323A63 /* AppViewPrototype.xib */; };
+		D5B253B71080DFAD00323A63 /* AssetsCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B253AB1080DFAD00323A63 /* AssetsCollection.xib */; };
+		D5B253B81080DFAD00323A63 /* AssetViewPrototype.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B253AD1080DFAD00323A63 /* AssetViewPrototype.xib */; };
+		D5B253B91080DFAD00323A63 /* FoldersTree.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B253AF1080DFAD00323A63 /* FoldersTree.xib */; };
+		D5B253BA1080DFAD00323A63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5B253B11080DFAD00323A63 /* InfoPlist.strings */; };
+		D5B253BB1080DFAD00323A63 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B253B31080DFAD00323A63 /* MainMenu.xib */; };
+		D5B253C31080E09D00323A63 /* UpdatesPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B253C11080E09D00323A63 /* UpdatesPreferences.xib */; };
+		D5B253F01080E1CA00323A63 /* atPeek.icns in Resources */ = {isa = PBXBuildFile; fileRef = D5B253E21080E1CA00323A63 /* atPeek.icns */; };
+		D5B253F21080E1CA00323A63 /* BackgroundIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B253E41080E1CA00323A63 /* BackgroundIcon.png */; };
+		D5B253F31080E1CA00323A63 /* FolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B253E51080E1CA00323A63 /* FolderIcon.png */; };
+		D5B253F41080E1CA00323A63 /* iAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B253E61080E1CA00323A63 /* iAppIcon.png */; };
+		D5BBB37910810F49008A53DE /* SizzeledString.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BBB37810810F49008A53DE /* SizzeledString.m */; };
+		D5CAEFCF108031D00071775D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D591243810802E220055D774 /* Credits.rtf */; };
+		D5CAEFD9108031F40071775D /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D591241A10802BB40055D774 /* Sparkle.framework */; };
+		D5CAF04E1080353F0071775D /* AppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CAF03B1080353F0071775D /* AppsViewController.m */; };
+		D5CAF04F1080353F0071775D /* AssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CAF03D1080353F0071775D /* AssetsViewController.m */; };
+		D5CAF0501080353F0071775D /* FoldersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CAF03F1080353F0071775D /* FoldersViewController.m */; };
+		D5CAF0511080353F0071775D /* MyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CAF0411080353F0071775D /* MyWindowController.m */; };
+		D5CAF0521080353F0071775D /* ToggleableSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CAF0431080353F0071775D /* ToggleableSplitView.m */; };
+		D5CAF0531080353F0071775D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CAF0451080353F0071775D /* main.m */; };
+		D5CAF0541080353F0071775D /* ImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CAF0481080353F0071775D /* ImageAndTextCell.m */; };
+		D5CAF0551080353F0071775D /* RoundRect.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CAF04A1080353F0071775D /* RoundRect.m */; };
+		D5CAF0561080353F0071775D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CAF04C1080353F0071775D /* Utilities.m */; };
+		D5EB0DFA1086ECAD00879E4C /* PvrUncrush.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = D53B2B1A1086E3E800CB74D5 /* PvrUncrush.qlgenerator */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D53B2B191086E3E800CB74D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D53B2B121086E3E800CB74D5 /* PvrUncrush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = PvrUncrush;
+		};
+		D561AECC107F1B43003C650E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D561AEC5107F1B43003C650E /* PngUncrush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = PngUncrush;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D57B3BC110781889009D908E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/QuickLook;
+			dstSubfolderSpec = 1;
+			files = (
+				D561AECE107F1B55003C650E /* PngUncrush.qlgenerator in CopyFiles */,
+				D5EB0DFA1086ECAD00879E4C /* PvrUncrush.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5CAEFE0108032120071775D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D5CAEFD9108031F40071775D /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* atPeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = atPeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50C56F51080E8D600FC57D9 /* AppPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPreferences.h; sourceTree = "<group>"; };
+		D50C56F61080E8D600FC57D9 /* AppPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPreferences.m; sourceTree = "<group>"; };
+		D50C56F91080E8D600FC57D9 /* NSPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPreferences.h; sourceTree = "<group>"; };
+		D50C56FA1080E8D600FC57D9 /* NSPreferencesModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPreferencesModule.h; sourceTree = "<group>"; };
+		D50C56FB1080E8D600FC57D9 /* UpdatesPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatesPreferences.h; sourceTree = "<group>"; };
+		D50C56FC1080E8D600FC57D9 /* UpdatesPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatesPreferences.m; sourceTree = "<group>"; };
+		D51AED8D10882A2300556E96 /* UncrushPvr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UncrushPvr.cpp; path = ../PvrUncrush/UncrushPvr.cpp; sourceTree = SOURCE_ROOT; };
+		D51AED8E10882A2300556E96 /* UncrushPvr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UncrushPvr.h; path = ../PvrUncrush/UncrushPvr.h; sourceTree = SOURCE_ROOT; };
+		D51AEDA810882C0900556E96 /* CPVRTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPVRTexture.h; path = ../PvrUncrush/PVRTexLib/CPVRTexture.h; sourceTree = SOURCE_ROOT; };
+		D51AEDA910882C0900556E96 /* CPVRTextureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPVRTextureData.h; path = ../PvrUncrush/PVRTexLib/CPVRTextureData.h; sourceTree = SOURCE_ROOT; };
+		D51AEDAA10882C0900556E96 /* CPVRTextureHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPVRTextureHeader.h; path = ../PvrUncrush/PVRTexLib/CPVRTextureHeader.h; sourceTree = SOURCE_ROOT; };
+		D51AEDAC10882C0900556E96 /* libPVRTexLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPVRTexLib.a; sourceTree = "<group>"; };
+		D51AEDAD10882C0900556E96 /* Pixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pixel.h; path = ../PvrUncrush/PVRTexLib/Pixel.h; sourceTree = SOURCE_ROOT; };
+		D51AEDAE10882C0900556E96 /* PVRException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRException.h; path = ../PvrUncrush/PVRTexLib/PVRException.h; sourceTree = SOURCE_ROOT; };
+		D51AEDAF10882C0900556E96 /* PVRTexLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRTexLib.h; path = ../PvrUncrush/PVRTexLib/PVRTexLib.h; sourceTree = SOURCE_ROOT; };
+		D51AEDB010882C0900556E96 /* PVRTexLibGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRTexLibGlobals.h; path = ../PvrUncrush/PVRTexLib/PVRTexLibGlobals.h; sourceTree = SOURCE_ROOT; };
+		D51AEDB110882C0900556E96 /* PVRTGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRTGlobal.h; path = ../PvrUncrush/PVRTexLib/PVRTGlobal.h; sourceTree = SOURCE_ROOT; };
+		D51AEE45108836A400556E96 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+		D53B2B121086E3E800CB74D5 /* PvrUncrush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PvrUncrush.xcodeproj; path = ../PvrUncrush/PvrUncrush.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D55E9B01108586BC00BB1C8C /* UncrushPng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = UncrushPng.c; path = ../PngUncrush/UncrushPng.c; sourceTree = SOURCE_ROOT; };
+		D55E9B02108586BC00BB1C8C /* UncrushPng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UncrushPng.h; path = ../PngUncrush/UncrushPng.h; sourceTree = SOURCE_ROOT; };
+		D561AEC5107F1B43003C650E /* PngUncrush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PngUncrush.xcodeproj; path = ../PngUncrush/PngUncrush.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D57833FD107F069C00F8CE7E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
+		D57CF99E107562DF00D27239 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = /System/Library/Frameworks/QuickLook.framework; sourceTree = "<absolute>"; };
+		D57CF9A41075632D00D27239 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		D591241A10802BB40055D774 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
+		D591243810802E220055D774 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = rsrc/Credits.rtf; sourceTree = "<group>"; };
+		D5B253A81080DFAD00323A63 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = AppsCollection.xib; sourceTree = "<group>"; };
+		D5B253AA1080DFAD00323A63 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = AppViewPrototype.xib; sourceTree = "<group>"; };
+		D5B253AC1080DFAD00323A63 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = AssetsCollection.xib; sourceTree = "<group>"; };
+		D5B253AE1080DFAD00323A63 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = AssetViewPrototype.xib; sourceTree = "<group>"; };
+		D5B253B01080DFAD00323A63 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = FoldersTree.xib; sourceTree = "<group>"; };
+		D5B253B21080DFAD00323A63 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
+		D5B253B41080DFAD00323A63 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MainMenu.xib; sourceTree = "<group>"; };
+		D5B253C21080E09D00323A63 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = rsrc/English.lproj/UpdatesPreferences.xib; sourceTree = "<group>"; };
+		D5B253E21080E1CA00323A63 /* atPeek.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = atPeek.icns; sourceTree = "<group>"; };
+		D5B253E41080E1CA00323A63 /* BackgroundIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundIcon.png; sourceTree = "<group>"; };
+		D5B253E51080E1CA00323A63 /* FolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FolderIcon.png; sourceTree = "<group>"; };
+		D5B253E61080E1CA00323A63 /* iAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iAppIcon.png; sourceTree = "<group>"; };
+		D5BBB37710810F49008A53DE /* SizzeledString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizzeledString.h; sourceTree = "<group>"; };
+		D5BBB37810810F49008A53DE /* SizzeledString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizzeledString.m; sourceTree = "<group>"; };
+		D5BBBA0210825BB8008A53DE /* AssetChangedDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetChangedDelegate.h; sourceTree = "<group>"; };
+		D5CAEFAC108030140071775D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rsrc/Info.plist; sourceTree = "<group>"; };
+		D5CAF03A1080353F0071775D /* AppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsViewController.h; sourceTree = "<group>"; };
+		D5CAF03B1080353F0071775D /* AppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsViewController.m; sourceTree = "<group>"; };
+		D5CAF03C1080353F0071775D /* AssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsViewController.h; sourceTree = "<group>"; };
+		D5CAF03D1080353F0071775D /* AssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsViewController.m; sourceTree = "<group>"; };
+		D5CAF03E1080353F0071775D /* FoldersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldersViewController.h; sourceTree = "<group>"; };
+		D5CAF03F1080353F0071775D /* FoldersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldersViewController.m; sourceTree = "<group>"; };
+		D5CAF0401080353F0071775D /* MyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWindowController.h; sourceTree = "<group>"; };
+		D5CAF0411080353F0071775D /* MyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWindowController.m; sourceTree = "<group>"; };
+		D5CAF0421080353F0071775D /* ToggleableSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleableSplitView.h; sourceTree = "<group>"; };
+		D5CAF0431080353F0071775D /* ToggleableSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToggleableSplitView.m; sourceTree = "<group>"; };
+		D5CAF0451080353F0071775D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5CAF0471080353F0071775D /* ImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAndTextCell.h; sourceTree = "<group>"; };
+		D5CAF0481080353F0071775D /* ImageAndTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAndTextCell.m; sourceTree = "<group>"; };
+		D5CAF0491080353F0071775D /* RoundRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundRect.h; sourceTree = "<group>"; };
+		D5CAF04A1080353F0071775D /* RoundRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundRect.m; sourceTree = "<group>"; };
+		D5CAF04B1080353F0071775D /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		D5CAF04C1080353F0071775D /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				D57CF99F107562DF00D27239 /* QuickLook.framework in Frameworks */,
+				D57CF9A51075632D00D27239 /* Quartz.framework in Frameworks */,
+				D591241B10802BB40055D774 /* Sparkle.framework in Frameworks */,
+				D51AEC92108827D000556E96 /* AppKit.framework in Frameworks */,
+				D51AEC95108827D600556E96 /* Foundation.framework in Frameworks */,
+				D51AEE46108836A400556E96 /* QuickTime.framework in Frameworks */,
+				D51AEDB210882C0900556E96 /* libPVRTexLib.a in Frameworks */,
+				D57833FE107F069C00F8CE7E /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D57833FD107F069C00F8CE7E /* libz.dylib */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				D57CF99E107562DF00D27239 /* QuickLook.framework */,
+				D57CF9A41075632D00D27239 /* Quartz.framework */,
+				D51AEE45108836A400556E96 /* QuickTime.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* atPeek.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* PhotoGridViewer */ = {
+			isa = PBXGroup;
+			children = (
+				D5B253221080DD2100323A63 /* Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				D561AEC5107F1B43003C650E /* PngUncrush.xcodeproj */,
+				D53B2B121086E3E800CB74D5 /* PvrUncrush.xcodeproj */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = PhotoGridViewer;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5B253E11080E1CA00323A63 /* Icons */,
+				D591243810802E220055D774 /* Credits.rtf */,
+				D5B253A61080DFAD00323A63 /* English.lproj */,
+				D5CAEFAC108030140071775D /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D591241A10802BB40055D774 /* Sparkle.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D50C56F41080E8D600FC57D9 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				D50C56F91080E8D600FC57D9 /* NSPreferences.h */,
+				D50C56FA1080E8D600FC57D9 /* NSPreferencesModule.h */,
+				D50C56F51080E8D600FC57D9 /* AppPreferences.h */,
+				D50C56F61080E8D600FC57D9 /* AppPreferences.m */,
+				D50C56FB1080E8D600FC57D9 /* UpdatesPreferences.h */,
+				D50C56FC1080E8D600FC57D9 /* UpdatesPreferences.m */,
+			);
+			name = Preferences;
+			path = src/Preferences;
+			sourceTree = "<group>";
+		};
+		D51AED7910882A0700556E96 /* PvrUncrusher */ = {
+			isa = PBXGroup;
+			children = (
+				D51AEDE410882DD100556E96 /* PVRTexLib */,
+				D51AED8E10882A2300556E96 /* UncrushPvr.h */,
+				D51AED8D10882A2300556E96 /* UncrushPvr.cpp */,
+			);
+			name = PvrUncrusher;
+			sourceTree = "<group>";
+		};
+		D51AEDAB10882C0900556E96 /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				D51AEDAC10882C0900556E96 /* libPVRTexLib.a */,
+			);
+			name = MacOS;
+			path = ../PvrUncrush/PVRTexLib/MacOS;
+			sourceTree = SOURCE_ROOT;
+		};
+		D51AEDE410882DD100556E96 /* PVRTexLib */ = {
+			isa = PBXGroup;
+			children = (
+				D51AEDA810882C0900556E96 /* CPVRTexture.h */,
+				D51AEDA910882C0900556E96 /* CPVRTextureData.h */,
+				D51AEDAA10882C0900556E96 /* CPVRTextureHeader.h */,
+				D51AEDAB10882C0900556E96 /* MacOS */,
+				D51AEDAD10882C0900556E96 /* Pixel.h */,
+				D51AEDAE10882C0900556E96 /* PVRException.h */,
+				D51AEDAF10882C0900556E96 /* PVRTexLib.h */,
+				D51AEDB010882C0900556E96 /* PVRTexLibGlobals.h */,
+				D51AEDB110882C0900556E96 /* PVRTGlobal.h */,
+			);
+			name = PVRTexLib;
+			sourceTree = "<group>";
+		};
+		D53B2B131086E3E800CB74D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D53B2B1A1086E3E800CB74D5 /* PvrUncrush.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D561AEC6107F1B43003C650E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D561AECD107F1B43003C650E /* PngUncrush.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D57833F9107F066B00F8CE7E /* PngUncrusher */ = {
+			isa = PBXGroup;
+			children = (
+				D55E9B02108586BC00BB1C8C /* UncrushPng.h */,
+				D55E9B01108586BC00BB1C8C /* UncrushPng.c */,
+			);
+			name = PngUncrusher;
+			sourceTree = "<group>";
+		};
+		D5B253221080DD2100323A63 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D50C56F41080E8D600FC57D9 /* Preferences */,
+				D51AED7910882A0700556E96 /* PvrUncrusher */,
+				D57833F9107F066B00F8CE7E /* PngUncrusher */,
+				D5CAF0461080353F0071775D /* Utilities */,
+				D5CAF0371080353F0071775D /* Classes */,
+				D5CAF0441080353F0071775D /* other */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		D5B253A61080DFAD00323A63 /* English.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				D5B253C11080E09D00323A63 /* UpdatesPreferences.xib */,
+				D5B253A71080DFAD00323A63 /* AppsCollection.xib */,
+				D5B253A91080DFAD00323A63 /* AppViewPrototype.xib */,
+				D5B253AB1080DFAD00323A63 /* AssetsCollection.xib */,
+				D5B253AD1080DFAD00323A63 /* AssetViewPrototype.xib */,
+				D5B253AF1080DFAD00323A63 /* FoldersTree.xib */,
+				D5B253B31080DFAD00323A63 /* MainMenu.xib */,
+				D5B253B11080DFAD00323A63 /* InfoPlist.strings */,
+			);
+			name = English.lproj;
+			path = rsrc/English.lproj;
+			sourceTree = "<group>";
+		};
+		D5B253E11080E1CA00323A63 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				D5B253E21080E1CA00323A63 /* atPeek.icns */,
+				D5B253E41080E1CA00323A63 /* BackgroundIcon.png */,
+				D5B253E51080E1CA00323A63 /* FolderIcon.png */,
+				D5B253E61080E1CA00323A63 /* iAppIcon.png */,
+			);
+			name = Icons;
+			path = rsrc/Icons;
+			sourceTree = "<group>";
+		};
+		D5CAF0371080353F0071775D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D5BBBA0210825BB8008A53DE /* AssetChangedDelegate.h */,
+				D5CAF03A1080353F0071775D /* AppsViewController.h */,
+				D5CAF03B1080353F0071775D /* AppsViewController.m */,
+				D5CAF03E1080353F0071775D /* FoldersViewController.h */,
+				D5CAF03F1080353F0071775D /* FoldersViewController.m */,
+				D5CAF03C1080353F0071775D /* AssetsViewController.h */,
+				D5CAF03D1080353F0071775D /* AssetsViewController.m */,
+				D5CAF0421080353F0071775D /* ToggleableSplitView.h */,
+				D5CAF0431080353F0071775D /* ToggleableSplitView.m */,
+				D5CAF0401080353F0071775D /* MyWindowController.h */,
+				D5CAF0411080353F0071775D /* MyWindowController.m */,
+			);
+			name = Classes;
+			path = src/Classes;
+			sourceTree = "<group>";
+		};
+		D5CAF0441080353F0071775D /* other */ = {
+			isa = PBXGroup;
+			children = (
+				D5CAF0451080353F0071775D /* main.m */,
+			);
+			name = other;
+			path = src/other;
+			sourceTree = "<group>";
+		};
+		D5CAF0461080353F0071775D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D5CAF0471080353F0071775D /* ImageAndTextCell.h */,
+				D5CAF0481080353F0071775D /* ImageAndTextCell.m */,
+				D5CAF0491080353F0071775D /* RoundRect.h */,
+				D5CAF04A1080353F0071775D /* RoundRect.m */,
+				D5CAF04B1080353F0071775D /* Utilities.h */,
+				D5CAF04C1080353F0071775D /* Utilities.m */,
+				D5BBB37710810F49008A53DE /* SizzeledString.h */,
+				D5BBB37810810F49008A53DE /* SizzeledString.m */,
+			);
+			name = Utilities;
+			path = src/Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* atPeek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "atPeek" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				D57B3BC110781889009D908E /* CopyFiles */,
+				D5CAEFE0108032120071775D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = atPeek;
+			productInstallPath = "$(HOME)/Applications";
+			productName = PhotoGridViewer;
+			productReference = 8D1107320486CEB800E47090 /* atPeek.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = atPurpose;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "atPeek" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* PhotoGridViewer */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D561AEC6107F1B43003C650E /* Products */;
+					ProjectRef = D561AEC5107F1B43003C650E /* PngUncrush.xcodeproj */;
+				},
+				{
+					ProductGroup = D53B2B131086E3E800CB74D5 /* Products */;
+					ProjectRef = D53B2B121086E3E800CB74D5 /* PvrUncrush.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* atPeek */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D53B2B1A1086E3E800CB74D5 /* PvrUncrush.qlgenerator */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PvrUncrush.qlgenerator;
+			remoteRef = D53B2B191086E3E800CB74D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D561AECD107F1B43003C650E /* PngUncrush.qlgenerator */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PngUncrush.qlgenerator;
+			remoteRef = D561AECC107F1B43003C650E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CAEFCF108031D00071775D /* Credits.rtf in Resources */,
+				D5B253B51080DFAD00323A63 /* AppsCollection.xib in Resources */,
+				D5B253B61080DFAD00323A63 /* AppViewPrototype.xib in Resources */,
+				D5B253B71080DFAD00323A63 /* AssetsCollection.xib in Resources */,
+				D5B253B81080DFAD00323A63 /* AssetViewPrototype.xib in Resources */,
+				D5B253B91080DFAD00323A63 /* FoldersTree.xib in Resources */,
+				D5B253BA1080DFAD00323A63 /* InfoPlist.strings in Resources */,
+				D5B253BB1080DFAD00323A63 /* MainMenu.xib in Resources */,
+				D5B253C31080E09D00323A63 /* UpdatesPreferences.xib in Resources */,
+				D5B253F01080E1CA00323A63 /* atPeek.icns in Resources */,
+				D5B253F21080E1CA00323A63 /* BackgroundIcon.png in Resources */,
+				D5B253F31080E1CA00323A63 /* FolderIcon.png in Resources */,
+				D5B253F41080E1CA00323A63 /* iAppIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CAF04E1080353F0071775D /* AppsViewController.m in Sources */,
+				D5CAF04F1080353F0071775D /* AssetsViewController.m in Sources */,
+				D5CAF0501080353F0071775D /* FoldersViewController.m in Sources */,
+				D5CAF0511080353F0071775D /* MyWindowController.m in Sources */,
+				D5CAF0521080353F0071775D /* ToggleableSplitView.m in Sources */,
+				D5CAF0531080353F0071775D /* main.m in Sources */,
+				D5CAF0541080353F0071775D /* ImageAndTextCell.m in Sources */,
+				D5CAF0551080353F0071775D /* RoundRect.m in Sources */,
+				D5CAF0561080353F0071775D /* Utilities.m in Sources */,
+				D50C56FD1080E8D600FC57D9 /* AppPreferences.m in Sources */,
+				D50C56FF1080E8D600FC57D9 /* UpdatesPreferences.m in Sources */,
+				D5BBB37910810F49008A53DE /* SizzeledString.m in Sources */,
+				D55E9B131085877600BB1C8C /* UncrushPng.c in Sources */,
+				D51AED9510882A2300556E96 /* UncrushPvr.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D5B253A71080DFAD00323A63 /* AppsCollection.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B253A81080DFAD00323A63 /* English */,
+			);
+			name = AppsCollection.xib;
+			sourceTree = "<group>";
+		};
+		D5B253A91080DFAD00323A63 /* AppViewPrototype.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B253AA1080DFAD00323A63 /* English */,
+			);
+			name = AppViewPrototype.xib;
+			sourceTree = "<group>";
+		};
+		D5B253AB1080DFAD00323A63 /* AssetsCollection.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B253AC1080DFAD00323A63 /* English */,
+			);
+			name = AssetsCollection.xib;
+			sourceTree = "<group>";
+		};
+		D5B253AD1080DFAD00323A63 /* AssetViewPrototype.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B253AE1080DFAD00323A63 /* English */,
+			);
+			name = AssetViewPrototype.xib;
+			sourceTree = "<group>";
+		};
+		D5B253AF1080DFAD00323A63 /* FoldersTree.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B253B01080DFAD00323A63 /* English */,
+			);
+			name = FoldersTree.xib;
+			sourceTree = "<group>";
+		};
+		D5B253B11080DFAD00323A63 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B253B21080DFAD00323A63 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5B253B31080DFAD00323A63 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B253B41080DFAD00323A63 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D5B253C11080E09D00323A63 /* UpdatesPreferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B253C21080E09D00323A63 /* English */,
+			);
+			name = UpdatesPreferences.xib;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Frameworks\"";
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = rsrc/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/Linux\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/Win32\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/Linux\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/Win32\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/MacOS\"";
+				PRODUCT_NAME = atPeek;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
+				PREBINDING = YES;
+				PRODUCT_NAME = atPeek;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D5CAF1D7108041D40071775D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				COPY_PHASE_STRIP = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				KEEP_PRIVATE_EXTERNS = YES;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
+				PREBINDING = YES;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = atPeek;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		D5CAF1D9108041D40071775D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Frameworks\"";
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = rsrc/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/Linux\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/Win32\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/Linux\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/MacOS\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/Win32\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 = "\"$(SRCROOT)/../PvrUncrush/PVRTexLib/MacOS\"";
+				PRODUCT_NAME = atPeek;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "atPeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4C08A954540054247B /* Release */,
+				D5CAF1D9108041D40071775D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "atPeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF5008A954540054247B /* Release */,
+				D5CAF1D7108041D40071775D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

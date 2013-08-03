@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.c */; };
+		61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.c */; };
+		8D576312048677EA00EA77CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
+		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
+		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
+		C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86B05260671AA6E00DD9006 /* CoreServices.framework */; };
+		D51AEF0C10883F9300556E96 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51AEF0B10883F9300556E96 /* QuickTime.framework */; };
+		D5BDCC941086C6C300E24849 /* CPVRTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BDCC821086C6C300E24849 /* CPVRTexture.h */; };
+		D5BDCC951086C6C300E24849 /* CPVRTextureData.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BDCC831086C6C300E24849 /* CPVRTextureData.h */; };
+		D5BDCC961086C6C300E24849 /* CPVRTextureHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BDCC841086C6C300E24849 /* CPVRTextureHeader.h */; };
+		D5BDCC9A1086C6C300E24849 /* libPVRTexLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BDCC8B1086C6C300E24849 /* libPVRTexLib.a */; };
+		D5BDCC9B1086C6C300E24849 /* Pixel.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BDCC8C1086C6C300E24849 /* Pixel.h */; };
+		D5BDCC9C1086C6C300E24849 /* PVRException.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BDCC8D1086C6C300E24849 /* PVRException.h */; };
+		D5BDCC9D1086C6C300E24849 /* PVRTexLib.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BDCC8E1086C6C300E24849 /* PVRTexLib.h */; };
+		D5BDCC9E1086C6C300E24849 /* PVRTexLibGlobals.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BDCC8F1086C6C300E24849 /* PVRTexLibGlobals.h */; };
+		D5BDCC9F1086C6C300E24849 /* PVRTGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BDCC901086C6C300E24849 /* PVRTGlobal.h */; };
+		D5EF7259108451980052F34C /* UncrushPvr.h in Headers */ = {isa = PBXBuildFile; fileRef = D5EF7257108451980052F34C /* UncrushPvr.h */; };
+		D5EF725A108451980052F34C /* UncrushPvr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5EF7258108451980052F34C /* UncrushPvr.cpp */; };
+		F28CFBFD0A3EC0AF000ABFF5 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28CFBFC0A3EC0AF000ABFF5 /* ApplicationServices.framework */; };
+		F28CFC030A3EC0C6000ABFF5 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28CFC020A3EC0C6000ABFF5 /* QuickLook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08FB77B6FE84183AC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		8D576316048677EA00EA77CD /* PvrUncrush.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PvrUncrush.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C86B05260671AA6E00DD9006 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		D51AEF0B10883F9300556E96 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+		D5BDCC821086C6C300E24849 /* CPVRTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPVRTexture.h; sourceTree = "<group>"; };
+		D5BDCC831086C6C300E24849 /* CPVRTextureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPVRTextureData.h; sourceTree = "<group>"; };
+		D5BDCC841086C6C300E24849 /* CPVRTextureHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPVRTextureHeader.h; sourceTree = "<group>"; };
+		D5BDCC861086C6C300E24849 /* PVRTC Texture Compression.Usage Guide.1.4f.External.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PVRTC Texture Compression.Usage Guide.1.4f.External.pdf"; sourceTree = "<group>"; };
+		D5BDCC871086C6C300E24849 /* PVRTexLib.User Manual.1.7f.External.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PVRTexLib.User Manual.1.7f.External.pdf"; sourceTree = "<group>"; };
+		D5BDCC8B1086C6C300E24849 /* libPVRTexLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPVRTexLib.a; sourceTree = "<group>"; };
+		D5BDCC8C1086C6C300E24849 /* Pixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pixel.h; sourceTree = "<group>"; };
+		D5BDCC8D1086C6C300E24849 /* PVRException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRException.h; sourceTree = "<group>"; };
+		D5BDCC8E1086C6C300E24849 /* PVRTexLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTexLib.h; sourceTree = "<group>"; };
+		D5BDCC8F1086C6C300E24849 /* PVRTexLibGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTexLibGlobals.h; sourceTree = "<group>"; };
+		D5BDCC901086C6C300E24849 /* PVRTGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTGlobal.h; sourceTree = "<group>"; };
+		D5EF7257108451980052F34C /* UncrushPvr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncrushPvr.h; sourceTree = "<group>"; };
+		D5EF7258108451980052F34C /* UncrushPvr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UncrushPvr.cpp; sourceTree = "<group>"; };
+		F28CFBFC0A3EC0AF000ABFF5 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		F28CFC020A3EC0C6000ABFF5 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = /System/Library/Frameworks/QuickLook.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D576313048677EA00EA77CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
+				C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */,
+				F28CFBFD0A3EC0AF000ABFF5 /* ApplicationServices.framework in Frameworks */,
+				F28CFC030A3EC0C6000ABFF5 /* QuickLook.framework in Frameworks */,
+				D5BDCC9A1086C6C300E24849 /* libPVRTexLib.a in Frameworks */,
+				D51AEF0C10883F9300556E96 /* QuickTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* PvrUncrush */ = {
+			isa = PBXGroup;
+			children = (
+				D5BDCC811086C6C300E24849 /* PVRTexLib */,
+				08FB77AFFE84173DC02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = PvrUncrush;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F28CFC020A3EC0C6000ABFF5 /* QuickLook.framework */,
+				F28CFBFC0A3EC0AF000ABFF5 /* ApplicationServices.framework */,
+				C86B05260671AA6E00DD9006 /* CoreServices.framework */,
+				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+				D51AEF0B10883F9300556E96 /* QuickTime.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D576317048677EA00EA77CD /* Info.plist */,
+				8D5B49A704867FD3000E48DA /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D5EF7257108451980052F34C /* UncrushPvr.h */,
+				D5EF7258108451980052F34C /* UncrushPvr.cpp */,
+				61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.c */,
+				2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.c */,
+				08FB77B6FE84183AC02AAC07 /* main.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D576316048677EA00EA77CD /* PvrUncrush.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5BDCC811086C6C300E24849 /* PVRTexLib */ = {
+			isa = PBXGroup;
+			children = (
+				D5BDCC821086C6C300E24849 /* CPVRTexture.h */,
+				D5BDCC831086C6C300E24849 /* CPVRTextureData.h */,
+				D5BDCC841086C6C300E24849 /* CPVRTextureHeader.h */,
+				D5BDCC851086C6C300E24849 /* Documentation */,
+				D5BDCC8A1086C6C300E24849 /* MacOS */,
+				D5BDCC8C1086C6C300E24849 /* Pixel.h */,
+				D5BDCC8D1086C6C300E24849 /* PVRException.h */,
+				D5BDCC8E1086C6C300E24849 /* PVRTexLib.h */,
+				D5BDCC8F1086C6C300E24849 /* PVRTexLibGlobals.h */,
+				D5BDCC901086C6C300E24849 /* PVRTGlobal.h */,
+			);
+			path = PVRTexLib;
+			sourceTree = "<group>";
+		};
+		D5BDCC851086C6C300E24849 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D5BDCC861086C6C300E24849 /* PVRTC Texture Compression.Usage Guide.1.4f.External.pdf */,
+				D5BDCC871086C6C300E24849 /* PVRTexLib.User Manual.1.7f.External.pdf */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		D5BDCC8A1086C6C300E24849 /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				D5BDCC8B1086C6C300E24849 /* libPVRTexLib.a */,
+			);
+			path = MacOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D57630E048677EA00EA77CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5EF7259108451980052F34C /* UncrushPvr.h in Headers */,
+				D5BDCC941086C6C300E24849 /* CPVRTexture.h in Headers */,
+				D5BDCC951086C6C300E24849 /* CPVRTextureData.h in Headers */,
+				D5BDCC961086C6C300E24849 /* CPVRTextureHeader.h in Headers */,
+				D5BDCC9B1086C6C300E24849 /* Pixel.h in Headers */,
+				D5BDCC9C1086C6C300E24849 /* PVRException.h in Headers */,
+				D5BDCC9D1086C6C300E24849 /* PVRTexLib.h in Headers */,
+				D5BDCC9E1086C6C300E24849 /* PVRTexLibGlobals.h in Headers */,
+				D5BDCC9F1086C6C300E24849 /* PVRTGlobal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D57630D048677EA00EA77CD /* PvrUncrush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA3261E0896AD4900168862 /* Build configuration list for PBXNativeTarget "PvrUncrush" */;
+			buildPhases = (
+				8D57630E048677EA00EA77CD /* Headers */,
+				8D57630F048677EA00EA77CD /* Resources */,
+				8D576311048677EA00EA77CD /* Sources */,
+				8D576313048677EA00EA77CD /* Frameworks */,
+				8D576315048677EA00EA77CD /* Rez */,
+				D5EB0DD91086EB9300879E4C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PvrUncrush;
+			productInstallPath = /Library/QuickLook;
+			productName = PvrUncrush;
+			productReference = 8D576316048677EA00EA77CD /* PvrUncrush.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2CA326220896AD4900168862 /* Build configuration list for PBXProject "PvrUncrush" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* PvrUncrush */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D57630D048677EA00EA77CD /* PvrUncrush */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D57630F048677EA00EA77CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D576315048677EA00EA77CD /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D5EB0DD91086EB9300879E4C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\necho Resetting QuickLook caches\n\nqlmanage -r;\nqlmanage -r cache;";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D576311048677EA00EA77CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D576312048677EA00EA77CD /* main.c in Sources */,
+				2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.c in Sources */,
+				61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.c in Sources */,
+				D5EF725A108451980052F34C /* UncrushPvr.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D5B49A704867FD3000E48DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CA3261F0896AD4900168862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PVRTexLib/MacOS\"",
+					"\"$(SRCROOT)/PVRTexLib/Linux\"",
+					"\"$(SRCROOT)/PVRTexLib/Win32\"",
+				);
+				PRODUCT_NAME = PvrUncrush;
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		2CA326200896AD4900168862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PVRTexLib/MacOS\"",
+					"\"$(SRCROOT)/PVRTexLib/Linux\"",
+					"\"$(SRCROOT)/PVRTexLib/Win32\"",
+				);
+				PRODUCT_NAME = PvrUncrush;
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+		2CA326230896AD4900168862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2CA326240896AD4900168862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CA3261E0896AD4900168862 /* Build configuration list for PBXNativeTarget "PvrUncrush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA3261F0896AD4900168862 /* Debug */,
+				2CA326200896AD4900168862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CA326220896AD4900168862 /* Build configuration list for PBXProject "PvrUncrush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA326230896AD4900168862 /* Debug */,
+				2CA326240896AD4900168862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

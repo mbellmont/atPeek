@@ -1,0 +1,1 @@
+You need to replace this folder with real PVRTexLib
